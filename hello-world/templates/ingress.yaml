@@ -1,0 +1,24 @@
+{{- if .Values.nginx.enabled }}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: nginx-ingress
+ annotations:
+    kubernetes.io/ingress.class: nginx
+ labels:
+   app: nginx-ingress         
+spec:
+  {{- if .Values.tls.enabled }}
+  tls:
+  - hosts:
+    - {{ .Values.domain }}
+    secretName: {{ .Values.domain }}-com-tls
+  {{- end }}
+  rules:
+  - host: {{ .Values.domain }}
+    http:
+      paths:
+      - backend:
+          serviceName: hello-world-service
+          servicePort: 80
+{{- end }}

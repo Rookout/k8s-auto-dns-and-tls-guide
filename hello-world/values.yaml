@@ -1,0 +1,11 @@
+domain: hello-k8s.rookout.app
+nginx:
+  enabled: false
+nginx-ingress:
+  controller:
+    publishService:
+      enabled: true
+  rbac:
+    create: true  
+tls:
+  enabled: false

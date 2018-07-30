@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+www/static/rookout/js/rookout_web*
+.history

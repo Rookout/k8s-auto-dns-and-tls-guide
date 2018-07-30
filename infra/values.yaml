@@ -1,0 +1,6 @@
+domain: YOUR_DOMAIN
+email: YOUR_EMAIL
+externalDns:
+  enabled: false
+certManager:
+  enabled: false
