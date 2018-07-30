@@ -31,7 +31,7 @@ make install-cert-manager
 **We now finshed adding all of the infra parts to our cluster - good for us!!**
 
 Now every time we create an ingress with TLS and hosts the external dns will pick it up -> create a dns record ->
-then the  cert manger will pick up the certicate ->  and use the nginx to do the challenge!
+then the  cert manger will pick it up and add a TLS certifcate!
 
 
 
