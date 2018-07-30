@@ -17,7 +17,7 @@ Adding a new DNS endpoint + SSL certificate in your kubernetes cluster will take
 
 ## Clone the repo before we start:
 
-**Clone the repo `git clone https://github.com/rookout/k8s-auto-dns-and-tls-guide`**
+Clone the repo `git clone https://github.com/rookout/k8s-auto-dns-and-tls-guide`
 
 ## Steps:
 
