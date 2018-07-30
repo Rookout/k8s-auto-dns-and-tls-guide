@@ -12,5 +12,5 @@ Or simply
 ```bash
 make email-admin
 ```
-[Step 2 - Make your self cluster admin](https://github.com/Rookout/k8s-auto-dns-and-tls-guide/blob/master/gke/step_2_cluster_admin.md)
+[Step 3 - Install helm](https://github.com/Rookout/k8s-auto-dns-and-tls-guide/blob/master/gke/step_3_install_helm.md)
 
