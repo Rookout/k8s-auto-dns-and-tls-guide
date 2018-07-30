@@ -89,7 +89,19 @@ spec:
       - hello-world.rookout.com
 ```
 
+Use the clusterIssuer we defined at step 7
+```
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+```
+The challenge type is http (this will change the ingress to pass the challenge):
 
+```
+    config:
+    - http01:
+        ingress: nginx-ingress
+```
 
 * You get can use `kubectl get ing` and make sure you have created a working ingress.
 
