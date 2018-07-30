@@ -6,7 +6,7 @@ A simple guide on using:
 * [ingress-nginx]
 * [external-dns]
 
-We are also avilable on [gitter] if you encounter any problem!
+We are also available on [gitter] if you encounter any problem!
 
 ## Guide goal:
 
