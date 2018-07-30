@@ -10,8 +10,11 @@ We are also avilable on [gitter] if you encounter any problem!
 
 ## Guide goal:
 
-Adding a new DNS configuration + with an SSL certificate in your kubernetes cluster will take only a few seconds.
-  
+
+This is a **FULL** walkthrough for for configuring your kubernetes cluster for auto tls endpoints.
+
+Adding a new DNS endpoint + SSL certificate in your kubernetes cluster will take only a few seconds.
+
 ## Clone the repo before we start:
 
 **Clone the repo `git clone https://github.com/rookout/k8s-auto-dns-and-tls-guide`**
