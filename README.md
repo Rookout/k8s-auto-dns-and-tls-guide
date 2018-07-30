@@ -1,6 +1,6 @@
 k8s-auto-dns-and-tls-guide
 ===
-A simple guide on using:
+A simple guide for using:
 * [helm]
 * [cert-manager]
 * [ingress-nginx]
