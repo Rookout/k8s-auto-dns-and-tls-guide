@@ -46,48 +46,56 @@ spec:
 
 The annotations is what help the controller to pick up the ingress (to route traffic to it)
 
-    ```
+ ```
      annotations:
         kubernetes.io/ingress.class: nginx
-    ```
+ ```
 
-    The external DNS will pick the domain and create a new DNS record:
+ The external DNS will pick the domain and create a new DNS record:
 
-    ```
+ ```
       rules:
       - host: hello-world.rookout.com
-    ```
-    And using the certifcate we also get an ssl for this endpoint:
-    ```
+ ```
+
+ And using the certifcate we also get an ssl for this endpoint:
+
+ ```
       tls:
       - hosts:
         - hello-world.rookout.com
         secretName: hello-world.rookout.com-com-tls
-    ```
+ ```
 
 ### The cert
 ```
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: hello-world.rookout.app-com-tls
+  name: hello-world.rookout.com-com-tls
 spec:
-  secretName: hello-world.rookout.app-com-tls
+  secretName: hello-world.rookout.com-com-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: hello-world.rookout.app
+  commonName: hello-world.rookout.com
   dnsNames:
-  - hello-world.rookout.app
+  - hello-world.rookout.com
   acme:
     config:
     - http01:
         ingress: nginx-ingress
       domains:
-      - hello-world.rookout.app
+      - hello-world.rookout.com
 ```
 
 
+
+* You get can use `kubectl get ing` and make sure you have created a working ingress.
+
+* Go to your domain and check it out :)
+
+The end.
 
 
 
